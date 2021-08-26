@@ -1,4 +1,4 @@
-[Referece 1](https://www.edureka.co/blog/interview-questions/python-interview-questions/)
+[Reference 1](https://www.edureka.co/blog/interview-questions/python-interview-questions/)
 
 ### Key Features
 
@@ -9,6 +9,10 @@ Languages that do not need to be compiled before it is run, e.g. Python, PHP, Ru
 #### Dynamically typed language
 
 You do not need to declare the type of a variable like you have to do with C or Java.
+
+#### OOP
+
+An object oriented programming language, as opposed to procedure oriented programming. Related concepts: class, object, method, constructor.
 
 ### Memory management
 
@@ -30,16 +34,73 @@ An environment variable that is used when importing modules. The interpreter wil
 
 Declared outside of a function or in global space vs. declared inside a function
 
+#### Attibutes
+
+- Instance attributes: unique to each object
+- Class attributes: unique to each class
+
+#### Inheritence
+
+- Base class (parent class) -> derived class (child class)
+- Multiple inheritence: inherit from multiple parent classes 
+- Call `mro()` to view the execution order
+
+#### Class methods vs. Static methods
+
+#### Dunder methods
+
+- Dunder for "Double Underscores" methods
+- Commonly used for [operator overloading](https://en.wikipedia.org/wiki/Operator_overloading)
+
 ### Data Structures
 
 #### List
 
-Mutable, can hold different data types
+Mutable, ordered, can hold different data types
 
 #### Array
 
-Mutable, hold a single data type
+Mutable, ordered, hold a single data type
 
 #### Tuple
 
-Immutable, can hold different data types
+Immutable, ordered, can hold different data types
+
+#### Set
+
+Mutable, orodered, can not store duplicated items
+
+#### Dictionary
+
+Keys must be unique; ordered in Python 3.7
+
+## Numpy
+
+#### Ravel vs. Flatten
+
+`a1 = a.flatten('F')` is the same as `a2 = np.ravel(a)` except that `flatten()` will return a new array while `ravel()` only creates a shallow copy of the array. Thus, changing `a2` will change `a` as well.
+
+#### Squeezing & Expanding
+
+- Reduce array dimensions by dropping axes that are of unit length. E.g. an array of shape (1,4,1,5) becomes shape(4,5) after calling `a = np.squeeze(a)`. You can specify the specific axis to reduce by passing in the `axis` parameter.
+- `np.expand_dims(a, axis = 1)` is the opposite operation to `np.squeeze(a, axis = 1)`.
+
+#### Concatenate vs. Stack
+
+- `np.concatenate((arr1, arr2), axis = 0)` requires arrays to have the same shape. The return value has the same dimension as the input arrays.
+- `np.stack((arr1, arr2), axis = 0)` requires arrays to have the same shape. The return value will have one more dimension than the input arrays (the new dimension is specified with `axis` parameter).
+
+#### Repeat
+
+`np.repeat(arr, 3, axis = 1)`: repeat each element along axis 1 by 3 times
+
+#### Broadcasting
+
+Makes possible numeric operations between two arrays of different shapes.
+
+## PyTorch Tensors
+
+Similar to numpy arrays except that they can run on GPUs or other hardware accelerators. Their computations can be parallelized to reduce runtime.
+
+- numpy to tensor: `torch.from_numpy(arr)`
+- tensor to numpy: `t1.detach().numpy()`
