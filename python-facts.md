@@ -1,4 +1,5 @@
-[Reference 1](https://www.edureka.co/blog/interview-questions/python-interview-questions/)
+[Reference 1: Python Interview Questions](https://www.edureka.co/blog/interview-questions/python-interview-questions/)
+[Reference 2: Python tips](https://book.pythontips.com/en/latest/index.html)
 
 ### Key Features
 
@@ -13,6 +14,12 @@ You do not need to declare the type of a variable like you have to do with C or 
 #### OOP
 
 An object oriented programming language, as opposed to procedure oriented programming. Related concepts: class, object, method, constructor.
+
+##### Inheritence
+
+- Base class (parent class) -> derived class (child class)
+- Multiple inheritence: inherit from multiple parent classes 
+- Call `mro()` to view the execution order
 
 ### Memory management
 
@@ -39,18 +46,21 @@ Declared outside of a function or in global space vs. declared inside a function
 - Instance attributes: unique to each object
 - Class attributes: unique to each class
 
-#### Inheritence
+#### \*args and \*kwargs
 
-- Base class (parent class) -> derived class (child class)
-- Multiple inheritence: inherit from multiple parent classes 
-- Call `mro()` to view the execution order
-
-#### Class methods vs. Static methods
+- `*args` for passing in an unknown number of arguments
+- `*kwargs` for passing in an unknown number of keyword arguments (dictionary)
 
 #### Dunder methods
 
 - Dunder for "Double Underscores" methods
 - Commonly used for [operator overloading](https://en.wikipedia.org/wiki/Operator_overloading)
+
+#### Multithreading
+
+- Dividing a process into multiple threads that share the same address space. While these processes can be ran on different CPUs concurrently to achieve speedups, Python disallows such behavior through its Global Interpreter Lock (GIL). GIL makes sure that only one of the processes can execute at any given time. Actually, GIL adds overhead to the running time, so the total running time could increase due to multithreading.
+- Benefits: when a thread is executing a blocking operation, such as reading or writing to file, another thread could be executed first.
+- Synchronization: necessary to prevent two threads from accessing shared resources. Python prevents this using a lock mechanism.
 
 ### Data Structures
 
