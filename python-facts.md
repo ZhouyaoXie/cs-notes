@@ -18,8 +18,26 @@ An object oriented programming language, as opposed to procedure oriented progra
 ##### Inheritence
 
 - Base class (parent class) -> derived class (child class)
-- Multiple inheritence: inherit from multiple parent classes 
+- Types of inheritence:
+  - Single inheritence
+  - Multi-level inheritence: base1 -> d1 -> d2
+  - Hierarchical inheritence: inherit any number of child classes from one base class
+  - Multiple inheritence: inherit from multiple parent classes 
+  - 
 - Call `mro()` to view the execution order
+
+##### Polymorphism
+
+Say a parent class has a function `foo()`. A child class can also have a function with the same name, but with different parameters and variables.
+
+##### Encapsulation
+
+Binding code and data together. A Python class is an example of encapsulation.
+
+##### Class Variables vs. Instance variables
+
+- Class variables are shared between different instances of a class
+- Instance variales are unique to every object of that class
 
 ### Memory management
 
@@ -55,6 +73,9 @@ Declared outside of a function or in global space vs. declared inside a function
 
 - Dunder for "Double Underscores" methods
 - Commonly used for [operator overloading](https://en.wikipedia.org/wiki/Operator_overloading)
+- A few examples:
+    -   `__init__`: called whenever an instance of a class is initialized
+    -   `__getitem__`: return the result of accessing the instane using the [] (indexer) operator.
 
 #### Multithreading
 
