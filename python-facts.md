@@ -79,9 +79,31 @@ Declared outside of a function or in global space vs. declared inside a function
 
 #### Multithreading
 
-- Dividing a process into multiple threads that share the same address space. While these processes can be ran on different CPUs concurrently to achieve speedups, Python disallows such behavior through its Global Interpreter Lock (GIL). GIL makes sure that only one of the processes can execute at any given time. Actually, GIL adds overhead to the running time, so the total running time could increase due to multithreading.
-- Benefits: when a thread is executing a blocking operation, such as reading or writing to file, another thread could be executed first.
+[Reference: Concurrency in Python](https://www.tutorialspoint.com/concurrency_in_python/concurrency_in_python_threads.htm)
+
+##### Thread
+
+- Thread is the smallest executing unit in an OS.
+- Five states (Life cycle) of a thread:
+  - New thread. Not yet started, no resources have been allocated.
+  - Runnable. Resources have been allocated but task scheduler has not scheduled it to run.
+  - Running. Executes tasks.
+  - Not running/waiting. Thread is paused because it's either waiting for the response of some I/O request or waiting for the completion of execution of another thread.
+  - Dead. Thread terminated.
+
+##### Multi-threading in Python
+
+- Dividing a process into multiple threads that share the same address space. Code and data are shared among threads. Each thread has its only register, program counter, and stack.
+- While these processes can be ran on different CPUs concurrently to achieve speedups, Python disallows such behavior through its Global Interpreter Lock (GIL). GIL makes sure that only one of the processes can execute at any given time. Actually, GIL adds overhead to the running time, so the total running time could increase due to multithreading.
+- Benefits: 
+-   When a thread is executing a blocking operation, such as reading or writing to file, another thread could be executed first.
+-   Sharing of data
 - Synchronization: necessary to prevent two threads from accessing shared resources. Python prevents this using a lock mechanism.
+
+#### Concurrency vs. Parallelism
+
+- Concurrency is when two or more events are happening at the same time.
+- Parallelism is when a task is broken into subtasks that can be processed in parallel. The subtasks are distributed among different cores of a single CPU or among multiple computers connected within a network.
 
 ### Data Structures
 
