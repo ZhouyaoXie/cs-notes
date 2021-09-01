@@ -1,7 +1,7 @@
 [Reference 1: Python Interview Questions](https://www.edureka.co/blog/interview-questions/python-interview-questions/)
 [Reference 2: Python tips](https://book.pythontips.com/en/latest/index.html)
 
-### Key Features
+## Key Features
 
 #### Interpreted language
 
@@ -39,17 +39,19 @@ Binding code and data together. A Python class is an example of encapsulation.
 - Class variables are shared between different instances of a class
 - Instance variales are unique to every object of that class
 
-### Memory management
+#### Memory management
 
 1. Python private heap space: all Python objects and data structures are stored in a private heap that's managed by Python's memory manager. Programmers do not have access to this private heap.
 
 2. Python has an inbuilt garbage collector that recycles unused memory so that it can be made available to the heap space.
 
-### Important Concepts
+## Important Concepts
 
 #### Namespace
 
-A naming system to make sure that names are unique.
+[Reference](https://realpython.com/python-namespaces-scope/)
+
+A naming system to organize symbolic names assigned to objects in Python.
 
 #### PYTHONPATH
 
@@ -77,11 +79,20 @@ Declared outside of a function or in global space vs. declared inside a function
     -   `__init__`: called whenever an instance of a class is initialized
     -   `__getitem__`: return the result of accessing the instane using the [] (indexer) operator.
 
-#### Multithreading
+#### Pass by assignment
+
+[Reference](https://realpython.com/python-pass-by-reference/)
+
+- Pass by reference: the argument passed to the function is a reference to a variable that already exists in memory, instead of an independent vopy of that variable
+- Pass by assignment: when you pass an argument to a function, If an object representing the value (e.g. int 2) already exists, the name is bounded to that object, and the reference counter of the object is incremented. An entry is added to the namespace to bind the name with the object.
+
+Effect: when multiple names are assigned to the same object, Python increments the reference counter for that object, instead of creating duplicated copies of it.
+
+## Multithreading
 
 [Reference: Concurrency in Python](https://www.tutorialspoint.com/concurrency_in_python/concurrency_in_python_threads.htm)
 
-##### Thread
+#### Thread
 
 - Thread is the smallest executing unit in an OS.
 - Five states (Life cycle) of a thread:
@@ -91,7 +102,7 @@ Declared outside of a function or in global space vs. declared inside a function
   - Not running/waiting. Thread is paused because it's either waiting for the response of some I/O request or waiting for the completion of execution of another thread.
   - Dead. Thread terminated.
 
-##### Multi-threading in Python
+#### Multi-threading in Python
 
 - Dividing a process into multiple threads that share the same address space. Code and data are shared among threads. Each thread has its only register, program counter, and stack.
 - While these processes can be ran on different CPUs concurrently to achieve speedups, Python disallows such behavior through its Global Interpreter Lock (GIL). GIL makes sure that only one of the processes can execute at any given time. Actually, GIL adds overhead to the running time, so the total running time could increase due to multithreading.
@@ -105,7 +116,9 @@ Declared outside of a function or in global space vs. declared inside a function
 - Concurrency is when two or more events are happening at the same time.
 - Parallelism is when a task is broken into subtasks that can be processed in parallel. The subtasks are distributed among different cores of a single CPU or among multiple computers connected within a network.
 
-### Data Structures
+
+
+## Types & Data Structures
 
 #### List
 
