@@ -1,5 +1,7 @@
 ### Hive
 
+[Reference](https://medium.com/plumbersofdatascience/hive-architecture-in-depth-ba44e8946cbc)
+
 An ETL and data warehousing tool built on top of Hadoop. Its main architecture has four components:
 
 - Hadoop core components
