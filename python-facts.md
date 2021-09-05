@@ -1,4 +1,4 @@
-[Reference 1: Python Interview Questions](https://www.edureka.co/blog/interview-questions/python-interview-questions/)
+[Reference 1: Python Interview Questions](https://www.edureka.co/blog/interview-questions/python-interview-questions/)  
 [Reference 2: Python tips](https://book.pythontips.com/en/latest/index.html)
 
 ## Key Features
@@ -51,7 +51,15 @@ Binding code and data together. A Python class is an example of encapsulation.
 
 [Reference](https://realpython.com/python-namespaces-scope/)
 
-A naming system to organize symbolic names assigned to objects in Python.
+A naming system to organize symbolic names assigned to objects in Python. 
+
+Four diffrent kinds of namespaces in Python:
+- Built-in. Starts when Python interpreter is running, ends when the interpreter terminates.
+- Global. Starts when the main program body starts, ends when the interpreter terminates.
+- Local. Starts when a function gets executed in the main program, ends when the function terminates.
+- Enclosing. Starts when a function gets called inside a function (an enclosed function), ends when the function terminates.
+
+When a name is mentioned, Python searches for the variable with that name by the LEGB rule (Local -> Enclosing -> Global -> Built-in).
 
 #### PYTHONPATH
 
