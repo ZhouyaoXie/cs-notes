@@ -1,0 +1,8 @@
+
+Some bit manipulation tricks:
+
+#### Flip the least significant 1-bit to 0
+
+For n > 0, taking n & (n-1) flips the least significant 1-bit in n to 0 while keeping the other bits unchanged.
+
+[Example problem](https://leetcode.com/problems/number-of-1-bits/)
