@@ -84,7 +84,7 @@ Even after calling a single request multiple times, the outcome of the requests 
 
 #### Payload
 
-The request data which is rpesent in the body of every HTTP message. In RESTful web service, the payload can only be passed to the recipient through the POST method.'
+The request data which is repesented in the body of every HTTP message. In RESTful web service, the payload can only be passed to the recipient through the POST method.'
 
 ## urllib
 
@@ -92,7 +92,9 @@ The request data which is rpesent in the body of every HTTP message. In RESTful 
 
 [urllib.parse documentation](https://docs.python.org/3/library/urllib.parse.html)
 
-#### Read from a url
+[urllib POST & headers example](https://pythonprogramming.net/urllib-tutorial-python-3/)
+
+#### Simple GET request
 ```
 import urllib.request
 
@@ -123,7 +125,7 @@ with urllib.request.urlopen(req) as response:
 	the_page = response.read()
   ```
 
-#### GET request, encode data in the url itself
+#### Encode data in the url itself
 
 ```
 url_values = urllib.parse.urlencode(data)
