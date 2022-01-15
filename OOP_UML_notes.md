@@ -61,3 +61,56 @@ UP encourages a combination of risk-driven and client-driven planning:
 
 The goal of inception is to align business vision, determine feasibility, and decide whether the project is worth deeper investigation. 
 Most use cases should be identified by name, about 10% use cases should be analyzed in detail, but note that they are not expected to be final or correct.
+
+# Chapter V. Evolutionary Requirement
+
+**Def. A systematic approach to finding, documenting, organizing, and tracking the changing requirements of a system**
+
+### FURPS+ Model
+
+In UP, requirements can be broadly divided into functional and non-functional and are characterized by the FURPS+ model:
+- Functional
+- Usability
+- Reliability
+- Performance
+- Supportability
+- Implementation, interface, operations, packaging, legal, etc.
+
+### Key Artifacts
+
+- Use-case models (mostly for functional requirements)
+- Supplementary specifications (non-functional)
+- Glossory (including data dictionary)
+- Vision (big idea, business overview)
+- Business rules (domain rules)
+
+# Chapter VI. Use Cases
+
+- Use cases are textual stories.
+- Terms:
+  - Actor
+  - Scenerio/Use case instance
+- The outcome of a series actions by the actor can be success or failure.
+
+### Use Case Model
+
+- Use case name (start with a verb)
+- Level ("user-goal" or "subfunction")
+- Primary actor
+- Stakeholders and interests (supporting actors and offstage actors): the use case shold satisfies all the stakeholders' interests.
+- Preconditions (what must be true on start): not tested within the use case, they are conditions that are assumed to be true.
+- Success guarantee/Postconditions (what must be true on successful completion)
+- Main success scenario/Basic flow/"happy path" scenario
+- Extensions (alternate scenarios of success or failure)
+  - Has two parts: the condition and the handling
+  - The condition is written as sth. that can be detected by the system or an actor
+  - If an extension is too complicated, express as a separate use case
+- Special requirements (related non-functional requirements)
+- Technology and data variations list (varying I/O methods and data formats): these are constraints that need 
+- Frequence of occurrence 
+- Open issues
+
+### Guidelines for writing use case models
+- Keep UI out, focus on intent
+- Investigate the goal of the goal
+- Write in black-box style, focus on responsibility, not "how"
