@@ -14,7 +14,7 @@ Notes on reading *Applying UML and Patterns: An Introduction to Object-Oriented 
 
 ### Iterative development vs. waterfall
 
-**Iterative development is organized into a series of short, fixed-length mini projects, the outcome of each project being an executable, integrated, tested partial system. **
+**Iterative development is organized into a series of short, fixed-length mini projects, the outcome of each project being an executable, integrated, tested partial system.**
 
 In contrast, waterfall development involves big design steps before programming.
 
@@ -160,4 +160,3 @@ A visual representation of conceptual classes or real-situation objects in a dom
   - Description class: if each item instance has a price, sku, ... parameter, there is duplicate data in the model. It is space-inefficient and error-prone.
 2. draw them as classes in a UML class diagram
 3. add associations and attributes
-  - 
