@@ -93,7 +93,6 @@ In UP, requirements can be broadly divided into functional and non-functional an
 - The outcome of a series actions by the actor can be success or failure.
 
 ### Use Case Model
-
 - Use case name (start with a verb)
 - Level ("user-goal" or "subfunction")
 - Primary actor
@@ -114,3 +113,51 @@ In UP, requirements can be broadly divided into functional and non-functional an
 - Keep UI out, focus on intent
 - Investigate the goal of the goal
 - Write in black-box style, focus on responsibility, not "how"
+
+### How to find use cases
+1. Choose system boundary (just software, or plus hardware, or plus the user, or plus the entire org?)
+2. Find primary actors and goals: brainstorm primary actors first, then find their goals
+3. Define use cases: define one use case for each user goal
+
+# Chapter VII. Other Requirements
+- **Supplementary specification**: all requirements not captured in the use cases. Including common functionality requirements (e.g. error handling, logging, security, etc.) and non-functional requirements (e.g. UI, performance, hardware and interfaces, business rules, etc.)
+- **Vision**: 
+  - Summarize the goals and problems of the stackholders at a high level, reveal important non-functional goals
+  - Summarize system features, should pass the test "the system does X". A vision should try to have <10 features.
+- **Glossary**: definition of certain terms
+- **Domain rules**
+
+During inception, vision is written to help decision makers decide if the project is worth continuing. Other requirements start to develop during inception. During elaboration, the vision and other requirements are refined. By construction, major requirements should be stablized. 
+
+# Chapter IX. Domain Models
+A visual representation of conceptual classes or real-situation objects in a domain. In UML, a domain model is a set of class diagrams in which no operations are defined. It offers a conceptual perspective, not a software perspective.
+
+### Conceptual classes
+- Symbol: name or image representing the class
+- Intension: definition of the class
+- Extension: set of examples of the class
+
+### Associations
+- Association: a relationship between classes that needs to be preserved for some duration
+- Avoid adding too many associations
+- Verbs like "has" or "uses" are bad association names as they do not enhance meaning of the domain
+- There can be more than one associations between two classes
+- Multiplicity: how many instances of a class A can be associated with one instance of a class B
+
+### Attributes
+- Attributes should be primitive data types such as string, number, enumerations (e.g. size = {small, large}), data, etc. Complex attributes should be modeled as a separate clas with associaton.
+- Attributes should be modeled as a new data type class if:
+  - it has different sections
+  - there are operations associated with it
+  - it has other attributes
+  - it is a quantity with a unit (e.g. `Money` class with `price` and `amount` attributes)
+  - it is an abstraction of one or more types
+- Relate two classes with an association, not with an attribute (like a foreign key)
+
+### How to create a domain model
+1. find the conceptual classes
+  - Determine whether sth. is an attribute or a class: if we do not think of X as a number or text in the real world, X is probably a conceptual class.
+  - Description class: if each item instance has a price, sku, ... parameter, there is duplicate data in the model. It is space-inefficient and error-prone.
+2. draw them as classes in a UML class diagram
+3. add associations and attributes
+  - 
