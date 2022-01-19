@@ -3,7 +3,11 @@ Notes on reading *Applying UML and Patterns: An Introduction to Object-Oriented 
 [Chapter I. OOA/D](https://github.com/ZhouyaoXie/cs-notes/blob/main/OOP_UML_notes.md#chapter-i-object-oriented-analysis-and-development-ooad)  
 [Chapter II. Iterative, Evolutionary, and Agile](https://github.com/ZhouyaoXie/cs-notes/blob/main/OOP_UML_notes.md#chapter-ii-iterative-evolutionary-and-agile)  
 [Chapter III. Case Studies](https://github.com/ZhouyaoXie/cs-notes/blob/main/OOP_UML_notes.md#chapter-iii-case-studies)  
+[Chapter IV. Inception is Not the Requirement Phase](https://github.com/ZhouyaoXie/cs-notes/blob/main/OOP_UML_notes.md#chapter-iv-inception-is-not-the-requirement-phase)
 [Chapter IV. Inception is Not the Requirement Phase]()
+[Chapter VI. Use Cases]()
+[Chapter VII. Other Requirements]()
+[Chapter IX. Domain Models]()
 
 # Chapter I. Object-Oriented Analysis and Development (OOA/D)
 
