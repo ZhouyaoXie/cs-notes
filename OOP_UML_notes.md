@@ -5,7 +5,7 @@ Notes on reading *Applying UML and Patterns: An Introduction to Object-Oriented 
 [Chapter III. Case Studies](https://github.com/ZhouyaoXie/cs-notes/blob/main/OOP_UML_notes.md#chapter-iii-case-studies)  
 [Chapter IV. Inception is Not the Requirement Phase](https://github.com/ZhouyaoXie/cs-notes/blob/main/OOP_UML_notes.md#chapter-iv-inception-is-not-the-requirement-phase)
 [Chapter V. Evolutionary Requirement](https://github.com/ZhouyaoXie/cs-notes/blob/main/OOP_UML_notes.md#chapter-v-evolutionary-requirement)
-[Chapter VI. Use Cases]()
+[Chapter VI. Use Cases](https://github.com/ZhouyaoXie/cs-notes/blob/main/OOP_UML_notes.md#chapter-vi-use-cases)
 [Chapter VII. Other Requirements]()
 [Chapter IX. Domain Models]()
 
