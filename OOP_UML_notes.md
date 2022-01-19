@@ -1,5 +1,8 @@
 Notes on reading *Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development, Third Edition* by Craig Larman.
 
+[Chapter I. OOA/D](https://github.com/ZhouyaoXie/cs-notes/blob/main/OOP_UML_notes.md#chapter-i-object-oriented-analysis-and-development-ooad)
+[Chapter II. Iterative, Evolutionary, and Agile]()
+
 # Chapter I. Object-Oriented Analysis and Development (OOA/D)
 
 - Most critical skill: responsibility assignment. How should responsibilities be assigned to different software objects?
